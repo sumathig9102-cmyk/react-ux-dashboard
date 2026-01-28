@@ -1,0 +1,25 @@
+// src/pages/Dashboard.tsx
+import React from "react";
+import DashboardCard from "../components/DashboardCard";
+import Charts from "../components/Charts";
+import { Box, Grid } from "@mui/material";
+
+const Dashboard = () => {
+  return (
+    <Box sx={{ marginLeft: 240, padding: 3 }}>
+      <Grid container spacing={2}>
+        <Grid item>
+          <DashboardCard title="Total Users" value={1200} />
+        </Grid>
+        <Grid item>
+          <DashboardCard title="New Signups" value={75} />
+        </Grid>
+        <Grid item xs={12}>
+          <Charts />
+        </Grid>
+      </Grid>
+    </Box>
+  );
+};
+
+export default Dashboard;
