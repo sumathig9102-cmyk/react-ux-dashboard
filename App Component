@@ -1,0 +1,17 @@
+// src/App.tsx
+import React from "react";
+import Sidebar from "./components/Sidebar";
+import Navbar from "./components/Navbar";
+import Dashboard from "./pages/Dashboard";
+
+function App() {
+  return (
+    <div>
+      <Navbar />
+      <Sidebar />
+      <Dashboard />
+    </div>
+  );
+}
+
+export default App;
